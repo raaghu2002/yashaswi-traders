@@ -1,0 +1,159 @@
+/* src/styles/components/footer.css */
+.footer {
+  background-color: #708db5;
+  color: var(--light-color);
+}
+
+.footer-top {
+  padding: 4rem 0;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.footer-logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.footer-logo h3 {
+  color: var(--white);
+  margin-bottom: 0;
+}
+
+.footer-info p {
+  margin-bottom: 1.5rem;
+  color: #bbc6d8;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+  transition: var(--transition);
+}
+
+.social-links a:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-3px);
+}
+
+.footer h4 {
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.footer h4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 2px;
+  background-color: var(--secondary-color);
+}
+
+.footer-links ul,
+.footer-services ul,
+.footer-contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer-links a,
+.footer-services a {
+  color: #bbc6d8;
+  transition: var(--transition);
+}
+
+.footer-links a:hover,
+.footer-services a:hover {
+  color: var(--secondary-color);
+  padding-left: 5px;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  color: #bbc6d8;
+}
+
+.footer-contact .icon {
+  margin-right: 10px;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  margin-top: 4px;
+}
+
+.footer-contact a {
+  color: #bbc6d8;
+  transition: var(--transition);
+}
+
+.footer-contact a:hover {
+  color: var(--secondary-color);
+}
+
+.business-hours {
+  margin-top: 1.5rem;
+}
+
+.business-hours h5 {
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.business-hours p {
+  color: #bbc6d8;
+  margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+  background-color: #071529;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin-bottom: 0;
+  color: #bbc6d8;
+}
+
+@media screen and (max-width: 992px) {
+  .grid-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid-footer {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-top {
+    padding: 3rem 0;
+  }
+}

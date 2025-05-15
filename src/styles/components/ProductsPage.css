@@ -1,0 +1,39 @@
+/* Ensure proper spacing between navbar and page content */
+.products-page {
+  padding-top: 80px; /* Adjust this value to match the navbar height */
+}
+
+/* Page header styling */
+.page-header {
+  padding: 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  color: #263238;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  font-size: 1rem;
+  color: #646b6f;
+}
+
+/* Adjustments for the ProductList component */
+.product-list {
+  margin-top: 30px;
+}
+
+/* Scroll to top button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #536dfe;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
