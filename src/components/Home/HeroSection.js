@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className="hero-content">
         <h1>Yashaswi Traders</h1>
         <p>Steels, Materials, Fabrications</p>
-        <p>Trusted supplier of iron and steel products in Mandya since 1995</p>
+        <p>Established in 2015, we are Mandya's first stainless steel hardware shop, trusted for quality metal works and reliable service.</p>
         <p>Commercial Fabrication, Residential Fabrication, and Steel Materials Hardware Shop</p>
         <div className="hero-buttons">
           <Link to="/products" className="btn btn-primary">Explore Products</Link>

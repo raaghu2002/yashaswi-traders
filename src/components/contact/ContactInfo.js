@@ -1,15 +1,15 @@
 import React from 'react';
-import contactpage from '../../styles/components/contactpage.css';
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 const ContactInfo = () => {
   return (
     <div className="contact-info">
       <h2>Contact Information</h2>
-
       <div className="info-grid">
         <div className="info-item">
           <div className="info-icon">
-            <i className="fa fa-map-marker-alt"></i>
+            <FaMapMarkerAlt />
           </div>
           <div className="info-content">
             <h3>Address</h3>
@@ -17,10 +17,9 @@ const ContactInfo = () => {
             <p>Mandya, Karnataka 571401</p>
           </div>
         </div>
-
         <div className="info-item">
           <div className="info-icon">
-            <i className="fa fa-phone"></i>
+            <FaPhone />
           </div>
           <div className="info-content">
             <h3>Phone</h3>
@@ -28,10 +27,9 @@ const ContactInfo = () => {
             <p>+91 88672 89056</p>
           </div>
         </div>
-
         <div className="info-item">
           <div className="info-icon">
-            <i className="fa fa-envelope"></i>
+            <FaEnvelope />
           </div>
           <div className="info-content">
             <h3>Email</h3>
@@ -39,10 +37,9 @@ const ContactInfo = () => {
             <p>sales@yeshaswitraders.com</p>
           </div>
         </div>
-
         <div className="info-item">
           <div className="info-icon">
-            <i className="fa fa-clock"></i>
+            <FaClock />
           </div>
           <div className="info-content">
             <h3>Business Hours</h3>
@@ -51,21 +48,20 @@ const ContactInfo = () => {
           </div>
         </div>
       </div>
-
       <div className="social-links">
         <h3>Connect With Us</h3>
         <div className="social-icons">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-facebook-f"></i>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="facebook-icon">
+            <FaFacebookF />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-twitter"></i>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="twitter-icon">
+            <FaTwitter />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-instagram"></i>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="instagram-icon">
+            <FaInstagram />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-linkedin-in"></i>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="linkedin-icon">
+            <FaLinkedinIn />
           </a>
         </div>
       </div>

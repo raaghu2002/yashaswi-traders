@@ -13,12 +13,12 @@ const styles = {
   },
   heading: {
     fontFamily: "'Montserrat', sans-serif",
-    color: '#0a6836',
+    color: '#52b1ff',
     fontSize: '1.8rem',
     marginBottom: '1.5rem',
     position: 'relative',
     paddingBottom: '0.5rem',
-    borderBottom: '3px solid #ffa500',
+    borderBottom: '3px solidrgb(0, 0, 0)',
     width: 'fit-content'
   },
   formSuccess: {
@@ -218,7 +218,7 @@ const ContactForm = () => {
             e.currentTarget.style.transform = 'translateY(-2px)';
           }}
           onMouseOut={(e) => {
-            e.currentTarget.style.backgroundColor = '#0a6836';
+            e.currentTarget.style.backgroundColor = '#5FFC7B';
             e.currentTarget.style.transform = 'translateY(0)';
           }}
         >

@@ -5,19 +5,7 @@ const ProductCard = ({ product }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [selectedVariant, setSelectedVariant] = useState(0);
 
-  // Handle image navigation
-  const nextImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === (product.images?.length || 0) - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  const prevImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? (product.images?.length || 1) - 1 : prevIndex - 1
-    );
-  };
-
+  // Handle image navigation - now only used with the position controls
   const goToImage = (index) => {
     setCurrentImageIndex(index);
   };
@@ -54,46 +42,12 @@ const ProductCard = ({ product }) => {
               )}
             </ul>
 
-            <div className="sliderBlock_controls">
-              <div className="sliderBlock_controls__navigatin">
-                <div className="sliderBlock_controls__wrapper">
-                  <div
-                    className="sliderBlock_controls__arrow sliderBlock_controls__arrowBackward"
-                    onClick={prevImage}
-                  >
-                    <i className="fa fa-angle-left" aria-hidden="true"></i>
-                  </div>
-                  <div
-                    className="sliderBlock_controls__arrow sliderBlock_controls__arrowForward"
-                    onClick={nextImage}
-                  >
-                    <i className="fa fa-angle-right" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-
-              <ul className="sliderBlock_positionControls">
-                {(product.images || [product.image]).map((_, index) => (
-                  <li
-                    key={index}
-                    onClick={() => goToImage(index)}
-                    className={`sliderBlock_positionControls__paginatorItem ${
-                      currentImageIndex === index ? 'sliderBlock_positionControls__active' : ''
-                    }`}
-                  ></li>
-                ))}
-              </ul>
-            </div>
+            
           </div>
         </div>
 
         {/* Right Side - Product Details */}
         <div className="productCard_rightSide">
-          {/* <p className="block_model">
-            <span className="block_model__text">Product ID: </span>
-            <span className="block_model__number">{product.id}</span>
-          </p> */}
-
           <div className="block_product">
             <h2 className="block_name block_name__mainName">{product.name}</h2>
 

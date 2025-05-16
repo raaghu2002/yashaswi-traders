@@ -1,3 +1,6 @@
+/* Import stylish but professional fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
 .navbar {
   position: fixed;
   top: 0;
@@ -7,6 +10,7 @@
   background-color: transparent;
   z-index: 1000;
   transition: var(--transition);
+  font-family: 'Poppins', sans-serif;
 }
 
 .navbar.scrolled {
@@ -25,10 +29,35 @@
 .navbar-logo {
   display: flex;
   align-items: center;
-  font-family: var(--font-heading);
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   color: var(--primary-color);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.navbar-logo span {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-logo span:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondary-color);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: bottom right;
+}
+
+.navbar-logo:hover span:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .navbar-logo img {
@@ -48,9 +77,12 @@
 .nav-link {
   color: var(--dark-color);
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.95rem;
   padding: 0.5rem;
   position: relative;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
 }
 
 .nav-link::after {
@@ -61,7 +93,11 @@
   width: 0;
   height: 2px;
   background-color: var(--secondary-color);
-  transition: var(--transition);
+  transition: width 0.3s cubic-bezier(0.58, 0.3, 0.005, 1);
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
 }
 
 .nav-link:hover::after,
@@ -80,6 +116,21 @@
   color: var(--primary-color);
   font-weight: 600;
   font-size: 1rem;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.phone-number:hover {
+  background-color: rgba(var(--primary-color-rgb), 0.1);
+  border: 1px solid var(--primary-color);
+}
+
+.phone-number i {
+  margin-right: 8px;
 }
 
 .menu-icon {

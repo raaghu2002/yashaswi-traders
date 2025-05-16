@@ -111,7 +111,7 @@ img {
 
 .main__subtitle span {
   font-family: "Patua One", cursive;
-  color: #00a8af;
+  color: #52b1ff;
   font-style: normal;
   letter-spacing: 1px;
 }
@@ -128,7 +128,7 @@ img {
   font-weight: 400;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #00a8af !important;
+  color: #52b1ff !important;
   transition: all 0.3s ease-in-out;
   z-index: 2;
 }
@@ -141,8 +141,8 @@ img {
   display: block;
   width: 150px;
   padding: 16px 12px;
-  background-color: #00a8af;
-  border: 2px solid #00a8af;
+  background-color: #52b1ff;
+  border: 2px solid #52b1ff;
   border-radius: 1px;
   color: #f2f3f3;
   text-decoration: none;
@@ -160,7 +160,7 @@ img {
   background-color: transparent;
   letter-spacing: 3px;
   border-radius: 1px;
-  color: #00a8af;
+  color: #52b1ff;
 }
 
 /* Swiper Slider Styles */

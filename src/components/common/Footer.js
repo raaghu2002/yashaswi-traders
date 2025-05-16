@@ -17,30 +17,22 @@ const Footer = () => {
               <h3>Yeshaswi Traders</h3>
             </Link>
             <p>
-              Premium steel products and custom fabrication services for residential and commercial needs since 2005.
+              Premium steel products and custom fabrication services for residential and commercial needs since 2015.
             </p>
-            <ul className="social-links">
-              <li>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                  <FaFacebook />
-                </a>
-              </li>
-              <li>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                  <FaInstagram />
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                  <FaTwitter />
-                </a>
-              </li>
-              <li>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                  <FaLinkedin />
-                </a>
-              </li>
-            </ul>
+            <div className="social-links">
+              <a href="https://facebook.com" className="facebook" target="_blank" rel="noopener noreferrer">
+                <FaFacebook />
+              </a>
+              <a href="https://instagram.com" className="instagram" target="_blank" rel="noopener noreferrer">
+                <FaInstagram />
+              </a>
+              <a href="https://twitter.com" className="twitter" target="_blank" rel="noopener noreferrer">
+                <FaTwitter />
+              </a>
+              <a href="https://linkedin.com" className="linkedin" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin />
+              </a>
+            </div>
           </div>
 
           <div className="footer-links">
@@ -101,7 +93,7 @@ const Footer = () => {
               </li>
               <li>
                 <FaEnvelope className="icon" />
-                <a href="mailto:info@yeshaswitraders.com">info@yeshaswitraders.com</a>
+                <a href="#">info@yeshaswitraders.com</a>
               </li>
             </ul>
             <div className="business-hours">
